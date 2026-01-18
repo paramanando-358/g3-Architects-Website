@@ -125,8 +125,51 @@ main > section{
     margin-bottom: 24px;
 }
 
-/* some facts related styles */
+/* feature section related style  */
+#feature-section-title{
+    border-left:5px solid #FF900E ;
+    padding-left: 21px;
+}
 
+.feature-card{
+    padding:30px;
+    box-shadow:0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#expricence-badge{
+    padding:45px 42px;
+    font-size:1.5rem ;
+    font-weight: 500;
+    margin-left:-100px;
+    margin-top: -100px;
+}
+#exprience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.features{
+    gap:100px;
+}
+
+.feature-card .feature-title{
+    font-weight: 600;
+    font-size:1.25rem;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    
+}
+
+.feature-architect img{
+    width: 100%;
+
+}
+
+
+
+/* some facts related styles */
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -173,6 +216,7 @@ main > section{
 .sponsor-companies{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 130px;
 }
 
 /* image color gray  */
@@ -184,7 +228,8 @@ main > section{
 /* responsive media query */
 @media screen and (max-width:576px){
     .navbar, 
-    .nav-link, 
+    .nav-link,
+    .features 
     .teams{
         flex-direction: column;
     }
@@ -205,12 +250,30 @@ main > section{
     .our-features{
     margin-left: 20px;
 }
+
+#expricence-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+}
    
+}
+
+.copyright{
+    text-align: center;
+    max-width: 1440px;
+    height: 100px;
+    padding:38px 410px;
+    background-color: #FFF4E7;
+    margin-bottom: 150px;
+    margin-right: 100px;
+    margin-left: 100px;
+    
+    
 }
 
 /* medium device size */
 @media screen and (min-width:576px) and (max-width:992px){
-    .teams{
+    .teams, .features{
         flex-direction: column;
     }
     .our-features{
@@ -222,4 +285,8 @@ main > section{
     gap:50px;
     justify-items: center;
  }
+ #expricence-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+}
 }
